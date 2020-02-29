@@ -1,0 +1,220 @@
+body {
+  background-image: url("../images/diagonal-squares.png");
+  margin: 0px;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav {
+  z-index: 1000;
+  position: static;
+  position: sticky;
+  top: 0;
+  height: 55px;
+  background: white;
+  display: flex;
+  border-bottom: solid 3px;
+  border-color: #dddddd;
+}
+
+.nav-content {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-bottom: -3px;
+}
+
+#my-name {
+  background-color: #4aaaa5;
+  color: white;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  margin-left: auto;
+  order: 2;
+}
+
+.nav-content a {
+  width: 75px;
+  color: #777777;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-content a:hover {
+  background-color: #dddddd;
+}
+
+#main-content {
+  color: #777777;
+  background-color: white;
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 5px 0;
+  margin-bottom: 100px;
+  border: 3px solid;
+  border-collapse: collapse;
+  border-color: #dddddd;
+}
+
+.main-content-header {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  margin: 0 20px;
+  padding: 0px;
+  color: #4aaaa5;
+  border-bottom: solid 3px;
+  border-color: #dddddd;
+}
+
+.bio-wrapper {
+  margin: 30px 10px;
+}
+
+#about-img {
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+}
+
+.bio-text {
+  line-height: 1.5;
+}
+
+footer {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: grey;
+  border-top: solid 5px;
+  border-color: #4aaaa5;
+  position: fixed;
+  margin-top: -55px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+#portfolio-wrapper {
+  height: auto;
+  margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.portfolio-img {
+  margin: 10px;
+}
+.portfolio-img:hover {
+  opacity: 75%;
+}
+.portfolio-img p {
+  position: relative;
+  bottom: 30%;
+  background-color: #4aaaa5;
+  color: white;
+  line-height: 2.5;
+  width: 250px;
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input,
+textarea {
+  width: 100%;
+  line-height: 1.8;
+  margin: 5px auto;
+}
+
+#submit-button {
+  margin: 5px 0;
+  line-height: 2;
+  width: 100px;
+  background-color: #4aaaa5;
+  color: white;
+  border: none;
+}
+@media screen and (max-width: 980px) {
+  #main-content {
+    width: 600px;
+    margin: 50px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main-content {
+    width: 95%;
+    margin: 50px auto 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    position: static;
+    height: 110px;
+    z-index: 1000;
+  }
+  .nav-content {
+    z-index: 1000;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #my-name {
+    height: 50%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #buttons {
+    height: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #portfolio-wrapper {
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .portfolio-img {
+    margin: 0 auto;
+  }
+
+  .portfolio-img p {
+    position: relative;
+    bottom: 80px;
+    background-color: #4aaaa5;
+    color: white;
+    line-height: 2.5;
+    width: 250px;
+    text-align: center;
+    margin-bottom: -40px;
+  }
+}

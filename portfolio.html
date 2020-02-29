@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <script src="logic.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob's Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div id="my-name">Jacob Zirbel</div>
+            <div id="buttons">
+                <a href="index.html"> About </a>
+                <a href="portfolio.html"> Portfolio </a>
+                <a href="contact.html"> Contact </a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main-content">
+
+        <header class="main-content-header">
+            <h1>Portfolio</h1>
+        </header>
+
+
+        <div id="portfolio-wrapper">
+            <div class="portfolio-img" onclick="showContent('project1-content')"><img
+                    src="https://picsum.photos/id/213/250/200" alt="project1">
+                <p>Project 1</p>
+            </div>
+            <div class="portfolio-img" onclick="showContent('project1-content')"><img
+                    src="https://picsum.photos/id/23/250/200" alt="project2">
+                <p>Project 2</p>
+            </div>
+            <div class="portfolio-img" onclick="showContent('project1-content')"> <img
+                    src="https://picsum.photos/id/13/250/200" alt="project3">
+                <p>Project 3</p>
+            </div>
+            <div class="portfolio-img" onclick="showContent('project1-content')"><img
+                    src="https://picsum.photos/id/83/250/200" alt="project4">
+                <p>Project 4</p>
+            </div>
+            <div class="portfolio-img" onclick="showContent('project1-content')"><img
+                    src="https://picsum.photos/id/73/250/200" alt="project5">
+                <p>Project 5</p>
+            </div>
+        </div>
+        <div id="project1-content" style="display: none;">
+            <header class="main-content-header">
+                <h1>Project #</h1>
+            </header>
+            <div>
+                <p> show project # here </p>
+            </div>
+        </div>
+    </div>
+
+    <footer> Copyright </footer>
+
+</body>
+
+
+</html>
